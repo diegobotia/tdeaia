@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tedeaia — Inicio</title>
+	<meta name="description" content="Plataforma tedeaia — Spring Boot">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+	<div class="bg-grid" aria-hidden="true"></div>
+	<header class="top">
+		<a class="logo" href="/">tdea<span class="logo-accent">·</span>ia</a>
+		<nav class="nav" aria-label="Principal">
+			<a href="/actuator">Actuator</a>
+			<a href="/h2-console">Consola H2</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<p class="eyebrow">Entorno local</p>
+			<h1>Tu aplicación ya está en marcha</h1>
+			<p class="lead">
+				<strong>tedeaia</strong> corre sobre Spring Boot con JPA y H2 en memoria.
+				Desde aquí puedes explorar la API, la base de datos y el estado del servicio.
+			</p>
+			<div class="actions">
+				<a class="btn btn-primary" href="/actuator">Ver estado</a>
+				<a class="btn btn-ghost" href="/h2-console">Abrir H2</a>
+			</div>
+			<ul class="meta" role="list">
+				<li><span class="dot ok" aria-hidden="true"></span> Actuator en <code>/actuator</code></li>
+				<li><span class="dot" aria-hidden="true"></span> Consola H2 en <code>/h2-console</code></li>
+			</ul>
+		</section>
+
+		<section class="cards" aria-labelledby="cards-title">
+			<h2 id="cards-title" class="sr-only">Recursos útiles</h2>
+			<article class="card">
+				<h3>Datos</h3>
+				<p>Revisa esquemas y consultas con la consola web de H2 (solo desarrollo).</p>
+			</article>
+			<article class="card">
+				<h3>Observabilidad</h3>
+				<p>Endpoints de Actuator para salud y métricas del proceso.</p>
+			</article>
+			<article class="card">
+				<h3>Siguiente paso</h3>
+				<p>Añade controladores REST o vistas y enlázalos desde esta portada.</p>
+			</article>
+		</section>
+	</main>
+
+	<footer class="foot">
+		<span>com.tdea · tedeaia</span>
+		<span class="sep">·</span>
+		<span>Spring Boot</span>
+	</footer>
+</body>
+</html>
